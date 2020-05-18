@@ -1,0 +1,31 @@
+Model
+    class Item
+        state
+           _text: string
+           _isComplete: bool (=false)
+        behavior
+            get text(): string
+            get isComplete(): bool
+            complete(): void
+            unComplete(): void
+
+    class ToDoList
+        state
+            _items: [Item]        
+        behavior
+            get items : [Item]
+            getItemByText(string): Item
+            addItem(Item): void
+            removeItemByText(string): void
+            clear(): void
+
+View
+    class ToDoView
+        state
+           _model: ToDoList
+           _mountPoint: DOMElement
+        behavior
+            _addItemBtnClickHandler() : Arrow function
+            _clearBtnClickHandler() : Arrow function
+            render():void
+            

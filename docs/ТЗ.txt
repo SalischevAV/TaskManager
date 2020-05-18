@@ -1,0 +1,7 @@
+ToDo list
+    ad item
+    view all items
+    clear list
+    mark isComplete
+    mark unComplete
+    delete item
