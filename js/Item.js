@@ -14,11 +14,11 @@ class Item {
         return this._isComplete;
     }
 
-    comlete(){
+    complete(){
         this._isComplete = true;
     }
 
-    unComlete(){
+    unComplete(){
         this._isComplete = false;
     }
 
